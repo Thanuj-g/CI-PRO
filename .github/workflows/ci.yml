@@ -23,3 +23,9 @@ jobs:
 
       - name: Run tests
         run: npx jest
+
+      - name: Start app
+        run: |
+          nohup node server.js &
+          sleep 5
+          curl http://localhost:3000
