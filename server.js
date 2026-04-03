@@ -2,7 +2,7 @@ const http = require("http");
 const sum = require("./App");
 
 const server = http.createServer((req, res) => {
-  res.write(`Sum of 1 + 2 = ${sum(1, 2)}`);
+  res.write(`Sum of 1 + 5= ${sum(1, 5)}`);
   res.end();
 });
 
